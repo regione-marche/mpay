@@ -1,0 +1,89 @@
+# This repository adheres to the publiccode.yml standard by including this 
+# metadata file that makes public software easily discoverable.
+# More info at https://github.com/italia/publiccode.yml
+
+publiccodeYmlVersion: '0.2'
+categories:
+  - business-process-management
+  - digital-citizenship
+  - payment-gateway
+description:
+  it:
+    features:
+      - Pagamenti spontaneo on-line su circuito pagoPA
+      - Predisposizione stampa bollettino pagoPA
+      - Recupero flussi rendicontazione nodo
+      - Funzioni quadratura e riconciliazione dei pagamenti
+      - Controllo pagato/non pagato
+    genericName: Nodo regionale pagamenti pagoPA
+    longDescription: |
+      La Regione Marche si è posta come intermediario tecnologico e
+      soggetto facilitatore per gli enti locali per l'erogazione dei servizi di
+      pagamento ed in quanto tale è censito nell'elenco intermediari pagoPA
+      all'indirizzo
+      https://www.pagopa.gov.it/it/pubbliche-amministrazioni/partner-intermediari-elenco/
+      ed ha istituito il "Sistema Informativo regionale dei pagamenti
+      elettronici Mpay", al fine di offrire agli enti locali marchigiani uno
+      strumento per l'erogazione ai propri cittadini ed alle imprese dei servizi
+      di pagamento on line. 
+
+
+      Tale sistema informativo consente l'interoperabilità tra le
+      amministrazioni e i Prestatori di Servizio di Pagamento che hanno aderito
+      al nodo dei pagamenti Nazionale, rispettando le indicazioni normative
+      sulla materia e garantendo a cittadini e alle imprese il pagamento di
+      somme dovute alla Regione Marche e alle amministrazioni per le quali la
+      Regione Marche funge da intermediario.
+
+
+      MPay mette a disposizione del cittadino un portale WEB che consente
+      l'esecuzione di pagamenti spontanei o su avvisatura pagoPA di debiti nei
+      confronti delle P.A. aderenti.
+
+
+      Gli enti creditori dispongono di un portale gestionale per la gestione
+      completa del flusso di pagamento. 
+
+
+      Sono inoltre esposte delle interfacce che consentono ai gestionali degli
+      enti creditori la quadratura contabile e la gestione completa della
+      rendicontazione.
+    shortDescription: Nodo regionale per i pagamenti integrato pagoPA
+developmentStatus: stable
+it:
+  conforme:
+    gdpr: true
+    lineeGuidaDesign: false
+    misureMinimeSicurezza: true
+    modelloInteroperabilita: false
+  countryExtensionVersion: '0.2'
+  piattaforme:
+    anpr: false
+    cie: false
+    pagopa: true
+    spid: true
+  riuso:
+    codiceIPA: r_marche
+legal:
+  license: GPL-3.0-or-later
+localisation:
+  availableLanguages:
+    - it
+  localisationReady: false
+maintenance:
+  contacts:
+    - email: michele.russo@maggioli.it
+      name: Michele Russo
+    - email: andrea.polenta@maggioli.it
+      name: Andrea Polenta
+  contractors:
+    - name: Maggioli
+      until: '2025-04-15'
+  type: contract
+name: MPay
+platforms:
+  - linux
+  - web
+releaseDate: '2024-10-15'
+softwareType: standalone/web
+url: 'https://github.com/regione-marche/mpay'
