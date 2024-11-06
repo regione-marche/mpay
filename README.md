@@ -8,16 +8,16 @@ Con MPay si possono pagare i servizi di trasporto e mensa scolastica, multe e ve
 ## SERVIZI
 - Pagamenti con bollettini: basta indicare l'Ente verso il quale fare il pagamento e inserire gli estremi del bollettino o del IUV (Identificativo Univoco di Versamento).
 - Versamenti spontanei: basta inserire le informazioni richieste dal sistema: importo, data, codice fiscale e causale del versamento.
-- Estratto Conto: basta registrarsi con SPID o sistema di autentificazione riconosciuto dalla Regione Marche e ogni cittadino potrà  accedere alla propria posizione debitoria e verificare il dovuto nei confronti degli Enti aderenti al servizio.
+- Estratto Conto: basta registrarsi con SPID o sistema di autentificazione riconosciuto dalla Regione Marche e ogni cittadino potrà  accedere alla propria posizione debitoria e verificare il dovuto nei confronti degl'Enti aderenti al servizio.
 
 URL = https://mpay.regione.marche.it/mpay/default/homepage.do
 
 
-## (MUST) link ad eventuale documentazione aggiuntiva non inclusa nel presente repository;
+## Link documentazione aggiuntiva non inclusa nel presente repository;
 https://www.regione.marche.it/Portals/0/Paesaggio_Territorio_Urbanistica/GenioCivile/CONCESSIONI%20AREE%20DEMANIALI/2020/istruzioni_pagamento_MyPAY_per_il_cittadino.pdf
 
 
-## (MUST) spiegazione struttura del repository anche a beneficio dei potenziali contributori (struttura delle directory e dei branch);
+## Spiegazione struttura del repository anche a beneficio dei potenziali contributori (struttura delle directory e dei branch);
 
 Librerie per poter permettere a repo webservice e front-end di essere compilati correttamente:
 com.esed.easybridge.core: libreria usata dal WS Easybridge per primitive modello 1 con pagopa.
@@ -108,7 +108,7 @@ com.seda.payer.estrattoconto_csv: batch caricament pendenze su estratto conto MP
 com.seda.payer.quadratura.nodo: batch di scarico flussi rendicontazione nodo e quadratura degli stessi con le transazioni pagate dai cittadini.
 com.esed.payer.inviaAvvisiForGeos: batch per generazione PDF delle pendenze caricate dal processo estratto_conto_csv
 
-## (MUST) elenco dettagliato prerequisiti e dipendenze (sistemi operativi, librerie, framework eccetera) con esplicita indicazione di eventuali dipendenze da software commerciali;
+## Elenco dettagliato prerequisiti e dipendenze (sistemi operativi, librerie, framework eccetera) con esplicita indicazione di eventuali dipendenze da software commerciali;
 
 Tutti i repo MPAY utilizzano MAVEN come  strumento di automazione della costruzione e di gestione delle dipendenze. 
 
@@ -123,7 +123,7 @@ Esempio:
 
 L'elenco delle librerie quindi è presente nel pom.xml del progetto https://github.com/regione-marche/pagonet-base
 
-## (MUST) istruzioni per l'installazione:
+## Istruzioni per l'installazione:
 procedura di installazione di requisiti e dipendenze;
 build system (se previsto dal progetto);
 comandi per la compilazione o il deployment, possibilmente automatizzati da uno script/Makefile (se previsto dal progetto);
@@ -135,9 +135,9 @@ comandi per la compilazione o il deployment, possibilmente automatizzati da uno 
 - configurare i file properties dei repo.
 - installare in wildfly i war prodotti dalle compilazioni.
 
-Fare riferimento al manuale "xxxxxxxxxxxxxx"
+Fare riferimento al manuale "MANUALE_ISTALLAZIONE_MPAY.docx"
 
-## (MUST) eventuali indicazioni sullo status del progetto:
+## Status del progetto:
 stato di alpha/beta/stabile eccetera;
 importanti limitazioni o known issues;
 
@@ -149,8 +149,8 @@ master: branch stabile ed installata in ambiente di esercizio
 
 (SHOULD) documentazione relativa all'eventuale utilizzo di sistemi per semplificare e accelerare il deployment in ambiente di sviluppo, test e produzione (ad esempio immagini Docker o altri sistemi di virtualizzazione con predisposizione di immagini preconfigurate);
 
-## (MUST) nomi dei detentori di copyright, ovvero l'Amministrazione committente;
+## Nomi dei detentori di copyright, ovvero l'Amministrazione committente;
 
-## (MUST) nomi dei soggetti incaricati del mantenimento del progetto open source (è richiesto il nome dell'azienda e facoltativamente si possono aggiungere nomi delle persone incaricate);
+## Nomi dei soggetti incaricati del mantenimento del progetto open source (è richiesto il nome dell'azienda e facoltativamente si possono aggiungere nomi delle persone incaricate);
 
-## (MUST) indirizzo e-mail a cui inviare segnalazioni di sicurezza (specificare che le segnalazioni di sicurezza non vanno inviate attraverso l'issue tracker pubblico ma devono essere inviate confidenzialmente a tale indirizzo e-mail);
+## Indirizzo e-mail a cui inviare segnalazioni di sicurezza (specificare che le segnalazioni di sicurezza non vanno inviate attraverso l'issue tracker pubblico ma devono essere inviate confidenzialmente a tale indirizzo e-mail);
